@@ -42,3 +42,6 @@ def signup_view(request):
         User.objects.create_user(username=username, password=password)
         return redirect('index_url')
     return render(request,'sign_up.html')
+
+def view(request):
+    return redirect('index_url')
