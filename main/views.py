@@ -3,6 +3,8 @@ from django.contrib.auth import login, logout, authenticate
 from .models import *
 
 def index_view(request):
+    context={
+    }
     return render(request, 'index.html')
 
 
