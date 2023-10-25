@@ -41,9 +41,6 @@ def signup_view(request):
         password = request.POST.get('password')
         User.objects.create_user(username=username, password=password)
         return redirect('index_url')
-    context = {
-
-    }
     return render(request,'sign_up.html')
 
 
