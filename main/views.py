@@ -43,5 +43,4 @@ def signup_view(request):
         return redirect('index_url')
     return render(request,'sign_up.html')
 
-def view(request):
-    return redirect('index_url')
+
